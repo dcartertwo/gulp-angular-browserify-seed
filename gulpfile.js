@@ -7,6 +7,7 @@ var minifyCSS = require('gulp-minify-css');
 var imagemin = require('gulp-imagemin');
 var browserify = require('gulp-browserify');
 var concat = require('gulp-concat');
+var clean = require('gulp-clean');
 
 gulp.task('lint', function() {
   gulp.src('./lib/*.js')

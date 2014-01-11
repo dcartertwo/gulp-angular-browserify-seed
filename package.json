@@ -14,7 +14,8 @@
     "gulp-minify-css": "~0.1.0",
     "gulp-browserify": "~0.2.4",
     "gulp-concat": "~2.1.7",
-    "gulp-imagemin": "~0.1.4"
+    "gulp-imagemin": "~0.1.4",
+    "gulp-clean": "~0.2.2"
   },
   "devDependencies": {
     "napa": "~0.2.0"
