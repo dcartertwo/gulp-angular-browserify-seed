@@ -8,11 +8,18 @@
     "gulp": "3.3.x",
     "bower": "1.2.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "napa": "~0.2.0"
+  },
   "engines": {
     "node": "0.10.x"
   },
   "scripts": {
+    "install": "napa",
     "start": "node app.js"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "angular-route": "angular/bower-angular-route"
   }
 }
