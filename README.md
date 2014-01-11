@@ -11,6 +11,7 @@ npm install
 #install global npm dependencies
 npm install -g bower
 npm install -g gulp
+npm install -g browserify
 
 #get bower dependencies
 bower install
