@@ -10,9 +10,14 @@ var concat = require('gulp-concat');
 var clean = require('gulp-clean');
 
 gulp.task('lint', function() {
-  gulp.src('./lib/*.js')
+  gulp.src('./app/app/app.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
+});
+
+gulp.task('clean', function() {
+    gulp.src('./app/js/app.js', {read: false})
+        .pipe(clean());
 });
 
 gulp.task('browserify', function() {
@@ -43,12 +48,16 @@ gulp.task('imagemin', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('compress', function() {
-  gulp.files('./lib/*.js')
-    .pipe(uglify())
-    .pipe(gulp.folder('./dist/'))
+//TODO add support for source maps
+gulp.task('minify-js', function() {
+  gulp.src('./app/js/*.js')
+    .pipe(uglify({
+    	// inSourceMap: 
+    	// outSourceMap: "app.js.map"
+    }))
+    .pipe(gulp.dest('./app/js'))
 });
 
 gulp.task('default', function(){
-  // place code for your default task here
+  gulp.run('clean', 'browserify', 'lint');
 });
