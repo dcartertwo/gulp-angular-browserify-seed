@@ -1,0 +1,27 @@
+{
+  "name": "SampleApp",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dcartertwo/gulp-angular-browserify-seed",
+  "authors": [
+    "Dan Carter"
+  ],
+  "description": "A sample app using gulp, angular, browserify, and bower",
+  "dependencies": {
+    "angular": "1.2.8",
+    "angular-route": "1.2.8"
+  },
+  "keywords": [
+    "gulp",
+    "angular",
+    "browserify"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
