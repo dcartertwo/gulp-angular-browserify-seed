@@ -1,6 +1,6 @@
 require('angular/angular');
 require('angular-route/angular-route');
-require('./bootstrap')
+require('./bootstrap');
 var mainctrl = require('./mainctrl');
 
 //Declare app level module and dependencies
@@ -19,5 +19,6 @@ angular.module('sampleApp', [
                 });
     }]);
 
+//Load controller(s)
 angular.module('sampleApp').controller('MainCtrl', ['$scope', mainctrl.MainController]);    
    
