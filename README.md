@@ -24,3 +24,5 @@ bower install
 #wire angular dependencies with browserify and gulp
 gulp browserify
 ```
+
+## Pull requests accepted :)
