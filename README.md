@@ -25,4 +25,4 @@ bower install
 gulp browserify
 ```
 
-## Pull requests accepted :)
+#### Pull requests accepted :)
