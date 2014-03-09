@@ -4,7 +4,6 @@ var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 var minifyHTML = require('gulp-minify-html');
 var minifyCSS = require('gulp-minify-css');
-var imagemin = require('gulp-imagemin');
 var browserify = require('gulp-browserify');
 var concat = require('gulp-concat');
 var clean = require('gulp-clean');
