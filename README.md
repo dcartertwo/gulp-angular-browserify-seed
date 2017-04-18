@@ -3,7 +3,7 @@ gulp-angular-browserify-seed
 
 A seed project for gulp, angular, and browserify projects.
 
-##Installation
+## Installation
 ```
 
 #install global npm dependencies
@@ -19,7 +19,7 @@ npm install
 bower install
 
 ```
-##Setup
+## Setup
 ```
 #wire angular dependencies with browserify and gulp
 gulp browserify
